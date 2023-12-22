@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyTabController">
+   <children>
+      <Label layoutX="29.0" layoutY="62.0" prefHeight="26.0" prefWidth="66.0" text="Default key" wrapText="true" />
+      <TextField fx:id="TFCurrentDefaultKey" alignment="CENTER" editable="false" layoutX="102.0" layoutY="62.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Button fx:id="BCopyDefaultKey" layoutX="410.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#CopyDefaultKey" text="Copy" wrapText="true" />
+      <Button fx:id="BGenerateCustomKey" layoutX="208.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#CustomKey" text="Custom key" />
+      <Label layoutX="30.0" layoutY="219.0" text="Custom key" />
+      <TextField fx:id="TFCustomKey" layoutX="102.0" layoutY="212.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Button fx:id="BCopyCustomKey" layoutX="410.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#CopyCustomKey" text="Copy" />
+      <TextField fx:id="TFRemovedCharacter" layoutX="102.0" layoutY="254.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Label layoutX="30.0" layoutY="249.0" prefHeight="36.0" prefWidth="66.0" text="Remove charcters: " wrapText="true" />
+      <TextField fx:id="TFAddCharacter" layoutX="102.0" layoutY="301.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Label layoutX="29.0" layoutY="296.0" prefHeight="36.0" prefWidth="66.0" text="Add characters: " wrapText="true" />
+      <TextField fx:id="TFNewDefaultKey" alignment="CENTER" layoutX="102.0" layoutY="114.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Button fx:id="BSetNewDefaultKey" layoutX="410.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#SetNewDefaultKey" prefHeight="26.0" prefWidth="47.0" text="Set" />
+      <Label layoutX="38.0" layoutY="114.0" prefHeight="26.0" prefWidth="60.0" text="New  key" wrapText="true" />
+      <Button fx:id="BRefresh" layoutX="220.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#refreshKey" text="Refresh" />
+      <Label fx:id="LNewDefaultKey" layoutX="208.0" layoutY="146.0" prefHeight="17.0" prefWidth="88.0" text="Error in new key" textAlignment="CENTER" textFill="red" />
+      <CheckBox fx:id="CBShuffleCustomKey" layoutX="301.0" layoutY="178.0" mnemonicParsing="false" text="Shuffle" />
+      <TextArea fx:id="TAPlainText" layoutX="52.0" layoutY="351.0" prefHeight="205.0" prefWidth="400.0" wrapText="true">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="BGenerateCustomFitKey" layoutX="204.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#GenerateCustomFitKey" text="Generate key" />
+      <Label layoutX="29.0" layoutY="605.0" text="Custom key" />
+      <TextField fx:id="TFCustomFitKey" layoutX="103.0" layoutY="601.0" prefHeight="26.0" prefWidth="300.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BCopyCustomFitKey" layoutX="410.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#CopyCustomFitKey" text="Copy" />
+      <CheckBox fx:id="CBShuffleCustomFitKey" layoutX="301.0" layoutY="570.0" mnemonicParsing="false" text="Shuffle" />
+   </children>
+</AnchorPane>
